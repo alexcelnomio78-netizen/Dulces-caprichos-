@@ -5,42 +5,87 @@
   <title>Dulces Caprichos</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #f5f0e6; /* beige */
+      background-image: url('fondo-galletas.jpg'); /* reemplaza con tu imagen de fondo */
+      background-size: cover;
+      background-repeat: repeat;
       color: #4b2e2e; /* café oscuro */
     }
+
     header {
-      background-color: #8b5a2b; /* café */
-      color: white;
-      padding: 1rem 2rem;
+      background-color: rgba(139, 90, 43, 0.9); /* café con transparencia */
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
     nav a {
-      color: white;
+      color: #fff;
       text-decoration: none;
-      margin: 0 0.5rem;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: bold;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      transition: background 0.3s;
     }
+
     nav a:hover {
-      text-decoration: underline;
+      background-color: #a0522d;
     }
-    .section {
+
+    .content {
+      background-color: rgba(255, 248, 240, 0.95);
+      margin: 2rem auto;
       padding: 2rem;
-      max-width: 900px;
-      margin: auto;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(75, 46, 46, 0.2);
     }
-    .section h2 {
+
+    .content h2 {
       color: #8b5a2b;
+      margin-top: 0;
     }
+
+    .menu {
+      margin-top: 1.5rem;
+    }
+
+    .menu ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu li {
+      background-color: #fff;
+      margin-bottom: 0.5rem;
+      padding: 0.75rem;
+      border-left: 5px solid #8b5a2b;
+      border-radius: 6px;
+    }
+
     footer {
-      background-color: #8b5a2b;
-      color: white;
       text-align: center;
       padding: 1rem;
+      background-color: rgba(139, 90, 43, 0.9);
+      color: white;
       margin-top: 2rem;
     }
   </style>
@@ -56,11 +101,21 @@
     </nav>
   </header>
 
-  <section class="section">
-    <h2>Bienvenidos</h2>
-    <p><strong>Dulces Caprichos</strong> es una empresa artesanal dedicada a la elaboración de <em>galletas y barras energéticas</em> saludables. Nuestra misión es ofrecer productos nutritivos, deliciosos y naturales que brinden energía y bienestar a nuestros consumidores.</p>
-    <p>Nos destacamos por la calidad de nuestros ingredientes, el compromiso con el medio ambiente y la innovación constante en sabores y presentaciones.</p>
-  </section>
+  <div class="content">
+    <h2>Dulces Caprichos</h2>
+    <p>Somos una empresa artesanal dedicada a la elaboración de <strong>galletas y barras energéticas</strong> saludables. Nuestra misión es ofrecer productos nutritivos, deliciosos y naturales que brinden energía y bienestar a nuestros consumidores.</p>
+    <p>Nos destacamos por el uso de ingredientes de alta calidad, sin conservadores artificiales, fomentando hábitos de consumo responsables con el medio ambiente.</p>
+
+    <div class="menu">
+      <h3>Menú</h3>
+      <ul>
+        <li>🍫 Galletas de chocolate</li>
+        <li>🌾 Barras energéticas de avena y miel</li>
+        <li>🍓 Galletas con frutos rojos (próximamente)</li>
+        <li>🥥 Barras de coco y linaza (próximamente)</li>
+      </ul>
+    </div>
+  </div>
 
   <footer>
     &copy; 2025 Dulces Caprichos | El Salto, Jalisco, México
