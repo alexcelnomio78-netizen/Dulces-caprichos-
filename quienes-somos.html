@@ -5,42 +5,71 @@
   <title>Quiénes Somos – Dulces Caprichos</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background-color: #f5f0e6; /* beige */
-      color: #4b2e2e; /* café oscuro */
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f0e6;
+      background-image: url('fondo-galletas.jpg'); /* reemplaza con tu imagen de fondo */
+      background-size: cover;
+      background-repeat: repeat;
+      color: #4b2e2e;
     }
+
     header {
-      background-color: #8b5a2b;
-      color: white;
-      padding: 1rem 2rem;
+      background-color: rgba(139, 90, 43, 0.9);
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
     nav a {
-      color: white;
+      color: #fff;
       text-decoration: none;
-      margin: 0 0.5rem;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: bold;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      transition: background 0.3s;
     }
+
     nav a:hover {
-      text-decoration: underline;
+      background-color: #a0522d;
     }
-    .section {
+
+    .content {
+      background-color: rgba(255, 248, 240, 0.95);
+      margin: 2rem auto;
       padding: 2rem;
       max-width: 900px;
-      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(75, 46, 46, 0.2);
     }
-    .section h2 {
+
+    .content h2 {
       color: #8b5a2b;
+      margin-top: 0;
     }
+
     .owners {
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
     }
+
     .owner-card {
       background-color: #fff;
       border: 1px solid #ccc;
@@ -49,11 +78,12 @@
       flex: 1;
       min-width: 250px;
     }
+
     footer {
-      background-color: #8b5a2b;
-      color: white;
       text-align: center;
       padding: 1rem;
+      background-color: rgba(139, 90, 43, 0.9);
+      color: white;
       margin-top: 2rem;
     }
   </style>
@@ -69,7 +99,7 @@
     </nav>
   </header>
 
-  <section class="section">
+  <div class="content">
     <h2>Conoce a las fundadoras</h2>
     <div class="owners">
       <div class="owner-card">
@@ -90,7 +120,7 @@
         <p><strong>Experiencia:</strong> Información no disponible</p>
       </div>
     </div>
-  </section>
+  </div>
 
   <footer>
     &copy; 2025 Dulces Caprichos | El Salto, Jalisco, México
